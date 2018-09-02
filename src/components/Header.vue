@@ -28,12 +28,14 @@
     <div class="blur-bg">
       <img :src="seller.avatar" alt="">
     </div>
-    div.
+    <div class="star-wrapper">
+      <star :size="48" :score="3.7"></star>
+    </div>
   </div>
 </template>
 
 <script>
-import star from 'star'
+import star from './star'
 export default {
     name: "Header",
     data() {
