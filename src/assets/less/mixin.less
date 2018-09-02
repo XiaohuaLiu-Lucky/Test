@@ -1,0 +1,25 @@
+.set-img(@w,@h) {
+  width: @w;
+  height: @h;
+  display: inline-block;
+}
+.bg-image(@url) {
+  background-image:url("../images/@{url}@2x.png");
+  background-repeat:no-repeat;
+  @media screen and (-webkit-device-pixel-ratio:3) or (min-device-pixel-ratio:3) {
+    background-image:url("../images/@{url}@3x.png");
+    background-repeat: no-repeat;
+  }
+}
+.border-1px(@color) {
+  position: relative;
+  &::after {
+    display: block;
+    width: 100%;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid @color;
+  }
+}
