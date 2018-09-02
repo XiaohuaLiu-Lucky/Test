@@ -33,6 +33,7 @@
 </template>
 
 <script>
+import star from 'star'
 export default {
     name: "Header",
     data() {
@@ -40,6 +41,9 @@ export default {
         classMap: [],
         show: false
       }
+    },
+    components: {
+      star
     },
     props:['seller'],
     created() {
