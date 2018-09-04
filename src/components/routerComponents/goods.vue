@@ -127,6 +127,7 @@ export default {
     .food-wrapper {
       padding: 0.36rem .36rem 0rem .36rem;
       .food {
+        position: relative;
         margin-bottom: .36rem;
         .border-1px(@grayColor,0,0);
         &:last-child {
@@ -167,7 +168,7 @@ export default {
           }
           .price-wrapper {
             margin-top: .18rem;
-            margin-bottom: .48rem;
+            padding-bottom: .48rem;
             .price {
               font-size: .28rem;
               font-weight: bold;
@@ -184,5 +185,10 @@ export default {
       }
     }
   }
+}
+.cartControl {
+  position: absolute;
+  right: 0;
+  bottom: 0.39rem;
 }
 </style>
